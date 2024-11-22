@@ -1,0 +1,27 @@
+/* Style for the container */
+.gallery_container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next row */
+    gap: 10px; /* Adds spacing between images */
+    justify-content: center; /* Centers the content horizontally */
+    padding: 10px; /* Adds padding around the gallery */
+    background-color: #f5f5f5; /* Optional: Set a background color */
+    border: 1px solid #ccc; /* Optional: Add a border */
+    border-radius: 5px; /* Optional: Slight rounding of corners */
+}
+
+/* Style for the images inside the gallery */
+.gallery_container img {
+    width: 150px; /* Set a uniform width */
+    height: 150px; /* Set a uniform height */
+    object-fit: cover; /* Ensures the image fills the area without distortion */
+    border-radius: 5px; /* Optional: Slight rounding of corners on images */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for better appearance */
+    transition: transform 0.2s ease; /* Animation for hover effect */
+}
+
+/* Hover effect on images */
+.gallery_container img:hover {
+    transform: scale(1.1); /* Slight zoom-in effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
