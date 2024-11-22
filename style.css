@@ -1,4 +1,4 @@
-/* Style for the container */
+/* Style for the Gallery container */
 .gallery_container {
     display: flex;
     flex-wrap: wrap; /* Allows wrapping to the next row */
@@ -24,4 +24,21 @@
 .gallery_container img:hover {
     transform: scale(1.1); /* Slight zoom-in effect */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Style for the Progress Circle container */
+.progress_circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5; 
+    border: 1px solid #ccc;
+}
+
+.progress_circle svg {
+    margin: 24px 0;
 }
